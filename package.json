@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
     "@iconify-json/simple-icons": "^1.2.58",
+    "@playform/compress": "^0.2.0",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.1.2",
     "astro-icon": "^1.1.5",
