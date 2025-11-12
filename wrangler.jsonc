@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "clcs-website",
+  "compatibility_date": "2025-11-12",
+  "workers_dev": false,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "clcs.club",
+      "custom_domain": true
+    }
+  ]
+}
