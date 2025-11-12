@@ -1,11 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <div class="grid h-screen w-screen grid-rows-12 py-32">
+    <div class="text-catppuccin-blue row-span-10 font-bold">
+      <div
+        class="flex flex-col items-start drop-shadow-[0_0_60px_rgba(147,197,253,0.6)]"
+      >
+        <div
+          class="text-catppuccin-blue pl-2 text-[15rem] leading-24 font-black tracking-tighter drop-shadow-[0_0_30px_#89b4fa] drop-shadow-[0_0_60px_#89b4fa]"
+        >
+          C</div
+        >
+        <div
+          class="text-catppuccin-blue -mt-8 text-[15rem] leading-none font-black -tracking-[2.5rem] drop-shadow-[0_0_30px_#89b4fa] drop-shadow-[0_0_60px_#89b4fa]"
+        >
+          L<span class="inline-block translate-y-3.5">S</span>
+        </div>
+      </div>
+    </div>
+    <div class="row-span-2">CLCS</div>
+  </div>
 </Layout>
