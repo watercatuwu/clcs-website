@@ -1,25 +1,58 @@
 ---
+import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div class="grid h-screen w-screen grid-rows-12 py-32">
-    <div class="text-catppuccin-blue row-span-10 font-bold">
+  <div
+    class="grid h-screen w-screen grid-rows-12 py-8 sm:py-16 md:py-24 lg:py-32"
+  >
+    <div
+      class="text-catppuccin-blue row-span-8 flex items-center justify-center font-bold text-nowrap"
+    >
       <div
-        class="flex flex-col items-start drop-shadow-[0_0_60px_rgba(147,197,253,0.6)]"
+        class="flex origin-center scale-[0.7] flex-col items-start drop-shadow-[0_0_60px_rgba(147,197,253,0.6)] sm:scale-100 md:scale-110 lg:scale-125 xl:scale-150"
       >
         <div
-          class="text-catppuccin-blue pl-2 text-[15rem] leading-24 font-black tracking-tighter drop-shadow-[0_0_30px_#89b4fa] drop-shadow-[0_0_60px_#89b4fa]"
+          class="text-catppuccin-blue pl-2 text-[15rem] leading-22 font-black tracking-tighter drop-shadow-[0_0_30px_#89b4fa]"
         >
           C</div
         >
         <div
-          class="text-catppuccin-blue -mt-8 text-[15rem] leading-none font-black -tracking-[2.5rem] drop-shadow-[0_0_30px_#89b4fa] drop-shadow-[0_0_60px_#89b4fa]"
+          class="text-catppuccin-blue -mt-8 text-[15rem] leading-none font-black -tracking-[2.5rem] drop-shadow-[0_0_30px_#89b4fa]"
         >
           L<span class="inline-block translate-y-3.5">S</span>
         </div>
       </div>
     </div>
-    <div class="row-span-2">CLCS</div>
+    <div
+      class="row-span-4 my-auto grid h-fit grid-rows-2 place-items-center gap-6"
+    >
+      <div class="text-lg md:text-xl lg:text-2xl"
+        >中大壢中 <span class="font-extrabold">電腦科學社</span></div
+      >
+      <div class="flex gap-4 text-xl md:text-2xl">
+        <a
+          href="https://w.wolf-yuan.dev/clcs/instagram"
+          class="transition duration-200 hover:text-[#FF0069] xl:hover:scale-125"
+          target="_blank"
+        >
+          <Icon name="simple-icons:instagram" /></a
+        >
+        <a
+          href="https://w.wolf-yuan.dev/clcs/discord"
+          class="transition duration-200 hover:text-[#5865F2] xl:hover:scale-125"
+          target="_blank"
+        >
+          <Icon name="simple-icons:discord" /></a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="fixed bottom-4 z-10 w-full text-center text-xs text-slate-600 md:right-4 md:text-right"
+  >
+    Website made by Wolf Yuan in less than 1 hour... PR welcome!
   </div>
 </Layout>
