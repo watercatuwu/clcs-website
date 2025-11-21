@@ -1,29 +1,15 @@
 ---
 import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
+import uwu from '../assets/uwu.png';
 ---
 
 <Layout>
   <div
     class="grid h-screen w-screen grid-rows-12 py-8 sm:py-16 md:py-24 lg:py-32"
   >
-    <div
-      class="text-catppuccin-blue row-span-8 flex items-center justify-center font-bold text-nowrap"
-    >
-      <div
-        class="flex origin-center scale-[0.7] flex-col items-start drop-shadow-[0_0_60px_rgba(147,197,253,0.6)] sm:scale-100 md:scale-110 lg:scale-125 xl:scale-150"
-      >
-        <div
-          class="text-catppuccin-blue pl-2 text-[15rem] leading-22 font-black tracking-tighter drop-shadow-[0_0_30px_#89b4fa]"
-        >
-          C</div
-        >
-        <div
-          class="text-catppuccin-blue -mt-8 text-[15rem] leading-none font-black -tracking-[2.5rem] drop-shadow-[0_0_30px_#89b4fa]"
-        >
-          L<span class="inline-block translate-y-3.5">S</span>
-        </div>
-      </div>
+    <div class="flex justify-center items-center row-span-8 p-4">
+        <img src={uwu.src} class="max-h-full aspect-[4/3]" />
     </div>
     <div
       class="row-span-4 my-auto grid h-fit grid-rows-2 place-items-center gap-6"
@@ -54,6 +40,5 @@ import Layout from "../layouts/Layout.astro";
     class="fixed bottom-4 z-10 w-full text-center text-xs text-slate-600 md:right-4 md:text-right"
   >
     Website made by Wolf Yuan in less than 1 hour... PR welcome!
-    <a href="/uwu" class="underline">uwu?</a>  
   </div>
 </Layout>
